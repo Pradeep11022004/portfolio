@@ -7,7 +7,7 @@ import {
   onSnapshot,
   query,
   orderBy,
-  serverTimestamp
+  serverTimestamp,
 } from "firebase/firestore";
 
 export default function ChatRoom() {
@@ -15,13 +15,11 @@ export default function ChatRoom() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
 
-  // Cek login
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (u) => setUser(u));
     return () => unsub();
   }, []);
 
-  // Ambil pesan real-time
   useEffect(() => {
     const q = query(collection(db, "messages"), orderBy("createdAt"));
     const unsub = onSnapshot(q, (snapshot) => {
@@ -30,7 +28,6 @@ export default function ChatRoom() {
     return () => unsub();
   }, []);
 
-  // Kirim pesan
   const sendMessage = async (e) => {
     e.preventDefault();
     if (!message.trim()) return;
@@ -40,20 +37,25 @@ export default function ChatRoom() {
       uid: user.uid,
       displayName: user.displayName,
       photoURL: user.photoURL,
-      createdAt: serverTimestamp()
+      createdAt: serverTimestamp(),
     });
     setMessage("");
   };
 
   return (
     <div className="bg-zinc-900 border border-gray-700 p-6 rounded-xl shadow-lg max-w-xl mx-auto mt-5">
-      <h2 className="text-2xl font-bold text-center mb-4 text-white">💬 Chat Room</h2>
+      <h2 className="text-2xl font-bold text-center mb-4 text-white">
+        Chat Room
+      </h2>
 
-      {/* Header user */}
       {user && (
         <div className="flex justify-between items-center mb-4 border-b border-gray-700 pb-3">
           <div className="flex items-center gap-3">
-            <img src={user.photoURL} alt="avatar" className="w-10 h-10 rounded-full" />
+            <img
+              src={user.photoURL}
+              alt="avatar"
+              className="w-10 h-10 rounded-full"
+            />
             <span className="text-white font-semibold">{user.displayName}</span>
           </div>
           <button
@@ -65,7 +67,6 @@ export default function ChatRoom() {
         </div>
       )}
 
-      {/* Area pesan */}
       <div className="h-72 overflow-y-auto border border-gray-700 p-3 rounded-lg bg-zinc-800 mb-4 space-y-3">
         {messages.map((msg) => (
           <div
@@ -100,14 +101,16 @@ export default function ChatRoom() {
         ))}
       </div>
 
-      {/* Form login / kirim pesan */}
       {user ? (
-        <form onSubmit={sendMessage} className="flex gap-2 flex-wrap sm:flex-nowrap w-full">
+        <form
+          onSubmit={sendMessage}
+          className="flex gap-2 flex-wrap sm:flex-nowrap w-full"
+        >
           <input
             type="text"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Ketik pesan..."
+            placeholder="Type a message..."
             className="flex-1 min-w-0 p-2 rounded-lg bg-zinc-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button
@@ -130,7 +133,7 @@ export default function ChatRoom() {
             />
             Login with Google
           </button>
-          <p className="text-sm text-gray-400">Login untuk mengirim pesan</p>
+          <p className="text-sm text-gray-400">Log in to send a message</p>
         </div>
       )}
     </div>
