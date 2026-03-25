@@ -1,29 +1,27 @@
-# Portofolio Web — [Faris Edrik P / rissss21]
+# Portofolio Web — [Pradeep]
 
-Selamat datang di portofolio web pribadi saya! 🌐  
-Dibuat dengan React + Vite, ini adalah showcase dari project, skill, dan karya yang ingin saya bagikan.
+Welcome to my personal portfolio website! 🌐
+Built with React + Vite, this is a showcase of my projects, skills, and work that I would like to share.
 
-##  Struktur Project
 
-- `public/` — file statis (favicon, assets, dsb.)  
-- `src/` — code utama React (komponen, utilitas, dsb.)  
-- `index.html` — entry point halaman web  
-- `package.json` & `package-lock.json` — manajemen dependencies dan script  
-- `vite.config.js` — konfigurasi build dan dev server Vite  
-- `eslint.config.js` — aturan linting agar kodenya tetap bersih dan konsisten  
+## Project Structure
+public/ — static files (favicon, assets, etc.)
+src/ — main React code (components, utilities, etc.)
+index.html — web page entry point
+package.json & package-lock.json — dependency management and scripts
+vite.config.js — Vite build and dev server configuration
+eslint.config.js — linting rules to keep code clean and consistent
+## Key Features
+Built with React + Vite — lightweight, fast reload, and optimized build performance
+ESLint is configured to maintain clean and consistent coding style
+Modular structure and ready to scale — can easily add pages like “About”, “Projects”, etc.
 
-##  Fitur Utama
-
-- Dibangun dengan **React + Vite** — ringan, cepat reload, dan performa build optimal  
-- **ESLint** telah terkonfigurasi agar coding style tetap rapi  
-- Struktur modular dan siap dikembangkan—bisa ditambahkan halaman “About”, “Projects”, dsb.
-
-##  Cara Jalankan
+##  Pradeep
 
 1. Clone repository ini:
 ```bash
-git clone https://github.com/rissss21/portofolio.git
-cd portofolio
+git clone https://pradeep11022004.github.io/portfolio/
+cd portfolio
 ````
 
 2. Install dependencies:
@@ -31,31 +29,31 @@ cd portofolio
 npm install
 ````
 
-3. Jalankan server lokal dengan hot reload:
+3. Run the local server with hot reload.:
 ```bash
 npm run dev
 ````
 
-4. Buat versi production:
+4. Build the production version:
 ```bash
 npm run build
 ````
 
 ## &#x20;Quick Preview
 
-Jika sudah di-deploy (contoh: GitHub Pages, Netlify, Vercel), kamu bisa tambahkan link deploy di sini, misalnya:
-[🔗 Lihat versi live](https://username.github.io/portofolio/)
+If it has already been deployed (e.g., GitHub Pages, Netlify, Vercel), you can add the deployment link here, for
+[🔗 View Live Version](https://pradeep11022004.github.io/portfolio/)
 
-## Tentang Saya
+## About Me
 
-Hai, saya Faris Edrik P (username GitHub: `rissss21`).
-Saya seorang Developer yang suka bikin aplikasi web ringan dengan tampilan modern dan performa tinggi. Scroll aja di project saya, dan jangan sungkan untuk reach out kalau ada pertanyaan!
+Hi, I’m Pradeep K (GitHub username: Pradeep.K).
+I’m a developer who enjoys building lightweight web applications with modern design and high performance. Feel free to explore my projects, and don’t hesitate to reach out if you have any questions!
 
-* **Email:** [email\_farisedrik21@gmail.com](mailto:email_farisedrik21@gmail.com)
-* **LinkedIn:** [linkedin.com/in/farisedp](https://www.linkedin.com/in/farisedp/)
-* **Instagram:** @farisedrikprayoga
+* **Email:** [email\_pradeeppradeep54207@gmail.com](mailto:email_pradeeppradeep54207@gmail.com)
+* **LinkedIn:** [linkedin.com/in/pradeep-k-1b99002a2](https://www.linkedin.com/in/pradeep-k-1b99002a2/)
+
 
 ---
 
 
-[1]: https://github.com/rissss21/portofolio "GitHub - rissss21/portofolio"
+[1]:https://pradeep11022004.github.io/portfolio/ "GitHub - pradeep11022004/portfolio"
