@@ -44,11 +44,8 @@ function App() {
       </div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1"
-          id="home"
-        >
-          <div className="animate__animated animate__fadeInUp animate__delay-3s">
+        <div className="hero pt-10" id="home">
+          <div className="animate__animated animate__fadeInUp animate__delay-3s max-w-3xl">
             <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
               <span className="inline-flex h-3 w-3 rounded-full bg-emerald-400"></span>
               <q>Building practical apps with clean UI and useful features.</q>
@@ -97,67 +94,6 @@ function App() {
                   className="custom-class"
                 />
               </a>
-            </div>
-          </div>
-
-          <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(160deg,rgba(8,15,28,0.98),rgba(9,24,39,0.92),rgba(20,83,45,0.35))] p-8 shadow-[0_18px_80px_rgba(0,0,0,0.35)]">
-              <div className="absolute -right-12 -top-12 h-36 w-36 rounded-full bg-cyan-400/20 blur-3xl"></div>
-              <div className="absolute -left-8 bottom-0 h-28 w-28 rounded-full bg-emerald-400/20 blur-3xl"></div>
-              <div className="relative">
-                <div className="mb-8 flex items-start justify-between gap-4">
-                  <div>
-                    <p className="mb-3 text-xs uppercase tracking-[0.35em] text-cyan-300">
-                      Profile Card
-                    </p>
-                    <h2 className="text-4xl font-bold">Pradeep</h2>
-                    <p className="mt-2 text-zinc-300">
-                      Java Full Stack Developer
-                    </p>
-                  </div>
-                  <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-300">
-                    Available
-                  </div>
-                </div>
-
-                <div className="mb-6 grid gap-4">
-                  <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
-                    <p className="text-sm text-zinc-400">Focus</p>
-                    <p className="mt-1 text-lg font-semibold text-white">
-                      Building useful apps with clean frontend experience
-                    </p>
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
-                      <p className="text-sm text-zinc-400">GitHub</p>
-                      <p className="mt-1 font-semibold">@Pradeep11022004</p>
-                    </div>
-                    <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
-                      <p className="text-sm text-zinc-400">Preferred Stack</p>
-                      <p className="mt-1 font-semibold">React, Firebase, MySQL</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-3">
-                  <a
-                    href="https://github.com/Pradeep11022004"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-center font-semibold transition-colors hover:bg-white/10"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/pradeep-k-1b99002a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-5 py-4 text-center font-semibold text-cyan-200 transition-colors hover:bg-cyan-400/15"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
